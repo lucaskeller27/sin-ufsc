@@ -1,6 +1,5 @@
-# Importar os módulos "turtle" e "math"
-import turtle
-import math
+# Importar os módulos
+import turtle, math
 
 # Criar uma tartaruga e referenciá-la pelo nome "tarta"
 tarta = turtle.Turtle()
@@ -9,14 +8,14 @@ tarta.speed(10)
 # Definir o valor da variável "x"
 x = 100
 
-# Desenhar o corpo da casa (um retângulo)
+# Definir uma função para desenhar os beirais
 def beiral():
-    
     tarta.forward(x / 2)
     tarta.right(180)
     tarta.forward(x/2)
-    
-tarta.forward(2 * x)
+
+# Desenhar o corpo da casa (um retângulo)
+tarta.forward(2*x)
 tarta.left(90)
 tarta.forward(x)
 
