@@ -1,12 +1,9 @@
-# Detecção de colisão é uma das operações mais comuns (e importantes) em jogos eletrônicos. O objetivo, basicamente, é verificar se dois objetos quaisquer colidiram, ou seja, se a interseção entre eles é diferente de vazio. Isso pode ser usado para saber se duas naves colidiram, se um monstro bateu numa parede, se um personagem pegou um item, etc.
+# Leitura dos valores dos dois retângulos
+x1, y1, x2, y2 = [int(w) for w in input().split()] # A
+x3, y3, x4, y4 = [int(w) for w in input().split()] # B
 
-# Para facilitar as coisas, muitas vezes os objetos são aproximados por figuras geométricas simples (esferas, paralelepípedos, triângulos etc). Neste problema, os objetos são aproximados por retângulos num plano 2D.
-
-# Escreva um programa que, dados dois retângulos, determine se eles se interceptam ou não.
-
-# Entrada
-# A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). Cada caso de teste contém duas linhas. Cada linha contém quatro inteiros (x0, y0, x1, y1, sendo 0 ≤ x0 < x1 ≤ 1.000.000 e 0 ≤ y0 < y1 ≤ 1.000.000) separados por um espaço em branco representando um retângulo. Os lados do retângulo são sempre paralelos aos eixos x e y.
-
-# Saída
-# Seu programa deve imprimir, na saída padrão, uma única linha para cada caso de teste, contendo o número 0 (zero) caso não haja interseção ou o número 1 (um) caso haja.
-
+# Verificar se não há interseção
+if (x1 > x3) or (x1 > x4) or (x2 > x3) or (x2 > x4) or (y1 > y3) or (y1 > y4) or (y2 > y3) or (y2 > y4):
+    print(0)
+else:
+    print(1)
