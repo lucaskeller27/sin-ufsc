@@ -1,10 +1,12 @@
+# Importar o módulo Turtle
 import turtle
 
-tarta = turtle.Turtle()
-tarta.speed(20)
+# Criar uma variável para a tartaruga
+tartaruga = turtle.Turtle()
+tartaruga.speed(10)
 
-for lado in range(10, 200, 5):
-    tarta.forward(lado)
-    tarta.right(90)
+for lado in range(0, 150, 5):
+    tartaruga.forward(lado)
+    tartaruga.right(90)
 
 turtle.done()
