@@ -31,3 +31,6 @@ tartaruga = turtle.Turtle()
 tartaruga.speed(20)
 
 # Desenhar a fila de laranjas
+razao = 10
+for n in range(0, 6, razao):
+    tartaruga.dot(100, "orange")
