@@ -1,11 +1,3 @@
-# def bola(raio):
-#     tarta.color("orange")
-#     tarta.begin_fill()
-#     tarta.circle(raio)
-#     tarta.end_fill()
-
-# razao = 10
-
 # for raio in range(0, 60, razao):
     
 #     bola(raio)
@@ -15,8 +7,6 @@
 #     tarta.up()
 #     tarta.forward(d)
 #     tarta.down()
-
-# turtle.done()
 
 # Importar o módulo Turtle
 import turtle
@@ -29,10 +19,14 @@ tartaruga.up()
 
 # Desenhar a fila de laranjas
 razao = 10
+
 for n in range(0, 60, razao):
+    # Desenhar a bola
     tartaruga.begin_fill()
     tartaruga.circle(razao)
     tartaruga.end_fill()
+    
+    # Andar até o ponto certo
     tartaruga.forward(razao + razao * 1.4)
     razao *= 1.5
 
