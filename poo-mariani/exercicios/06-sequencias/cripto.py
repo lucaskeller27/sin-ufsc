@@ -1,10 +1,3 @@
-# Componentes
-# 1. Alfabeto normal
-# 2. Alfabeto para cifragem
-# 3. Mensagem cifrada
-
-# Implementar um programa que dados estes 3 componentes retorne a mensagem original. Cada um destes componentes está numa linha distinta.
-
 # - Ver função "zip"
 
 # Exemplo de entrada:
@@ -23,7 +16,7 @@
 # Leitura e mapeamento dos alfabetos 
 alfabeto = input()
 cifra = input()
-mapeamento = dict(zip(alfabeto, cifra))
+mapeamento = dict(zip(cifra, alfabeto))
 
 # Leitura do texto criptografado
 texto_cripto = input()
@@ -31,4 +24,8 @@ texto = ''
 
 for car in texto_cripto:
     if car in mapeamento:
+        texto += mapeamento[car]
+    else:
         texto += car
+
+print(texto)
