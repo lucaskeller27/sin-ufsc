@@ -1,7 +1,7 @@
-# Leitura do salário
+# Ler o salário
 salario = float(input())
 
-# Cálculo do reajuste salarial
+# Calcular o índice de reajuste em porcentagem
 if (salario <= 400.00):
     percentual = 15
 elif (salario <= 800.00):
@@ -13,9 +13,9 @@ elif (salario <= 2000.00):
 elif (salario >= 2000.00):
     percentual = 4
 
-# Cálculo do valor de reajuste ganho
-reajuste = salario * percentual / 100
+# Calcular o valor do reajuste e do noov salário
+reajuste = percentual / 100 * salario
 salario_novo = salario + reajuste
 
-# Entrega do resultado
+# Entregar o resultado
 print(f"Novo salario: {salario_novo:.2f}\nReajuste ganho: {reajuste:.2f}\nEm percentual: {percentual} %")
