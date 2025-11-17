@@ -11,17 +11,19 @@ while True:
     
     # Ler o número N de meteoritos a serem analisados
     n = int(input())
+    contador_meteoritos = 0
     
     for i in range(n):
         n_teste = i
-        contador_meteoritos = 0
         
         # Ler as coordenadas do meteorito
         x, y = [int(m) for m in input().split()]
         
+        # Conferir se o meteorito caiu dentro ou fora do terreno
         if (x < x1) or (x > x2) or (y > y1) or (y < y2):
             pass
         else:
             contador_meteoritos += 1
-        
+    
+    # Retornar o resultado
     print(f'Teste {n_teste}\n{contador_meteoritos}')
